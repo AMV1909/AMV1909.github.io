@@ -53,6 +53,10 @@ form .text_field {
     margin: 30px 0;
 }
 
+#password_field {
+    margin-bottom: 0;
+}
+
 .text_field input {
     width: 100%;
     padding: 0 5px;
@@ -107,10 +111,33 @@ form input[type="submit"] {
     font-weight: 700;
     cursor: pointer;
     outline: none;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .response {
     color: red;
     text-align: center;
+    margin: 20px 0;
+}
+
+.reset_password {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-top: 5px;
+}
+
+.a {
+    color: #2691d9;
+    text-decoration: none;
+}
+
+.a:hover {
+    text-decoration: underline;
+}
+
+.no_account {
+    margin: 0 30px 20px;
+    display: flex;
+    justify-content: center;
 }
