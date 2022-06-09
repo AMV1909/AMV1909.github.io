@@ -1,5 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,14 +8,6 @@
     <link rel="stylesheet" href="../css/Login.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
 </head>
-
-<%
-String Error = "";
-if(request.getParameter("Finded") != null){
-    Error = "Usuario y/o Contraseña incorrectos";
-}
-%>
-
 <body>
     <div class="wrapper">
         <div class="div-form">
@@ -28,10 +18,10 @@ if(request.getParameter("Finded") != null){
                     <span></span>
                 </div>
                 <div class="text_field">
-                    <input type="password" name="Password" required><label>Contraseña</label>
+                    <input type="password" name="Password" required><label>ContraseÃ±a</label>
                     <span></span>
                 </div>
-                <p class="response"><%=Error %></p>
+                <p class="response"></p>
                 <input type="submit" name="Login" value="Ingresar">
             </form>
         </div>
