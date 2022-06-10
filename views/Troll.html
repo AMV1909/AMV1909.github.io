@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troll</title>
+</head>
+<body>
+    <button class="click-me" id="click-me">Click Me</button>
+
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .click-me {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+
+            border: none;
+            background-color: #2691d9;
+            color: white;
+
+            cursor: pointer;
+
+            position: absolute;
+            top: 50% ;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+        }
+    </style>
+
+    <script>
+        var button = document.querySelector(".click-me")
+
+        button.addEventListener('mouseover', function() {
+            var x = parseInt(Math.random()*100)
+            var y = parseInt(Math.random()*100)
+
+            button.style.top = y+"%"
+            button.style.left = x+"%"
+            button.style.transform = `translate(-${x}%, -${y}%)`
+        })
+    </script>
+</body>
+</html>
